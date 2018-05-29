@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:title="Lottie From Web"
+        android:elevation="0dp"
+        android:foregroundTint="@color/white"
+        android:titleTextColor="@color/white"
+        app:layout_scrollFlags="scroll|enterAlways|snap" />
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_below="@id/toolbar"
+        android:background="?attr/colorPrimary"
+        android:elevation="2dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button_1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="16dp"
+            android:background="@color/white"
+            android:textColor="@color/primary"
+            android:layout_height="wrap_content"
+            android:text="Test 1" />
+        <Button
+            android:id="@+id/button_2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:textColor="@color/primary"
+            android:layout_marginRight="16dp"
+            android:layout_height="wrap_content"
+            android:text="Test 2" />
+        <Button
+            android:id="@+id/button_3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:textColor="@color/primary"
+            android:layout_height="wrap_content"
+            android:text="Test 3" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/buttons"
+        android:layout_above="@+id/file_location">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true" />
+    </RelativeLayout>
+    <TextView
+        android:id="@id/file_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_content"
+        android:text="File: ---" />
+</RelativeLayout>
