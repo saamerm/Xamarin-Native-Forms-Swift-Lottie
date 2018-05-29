@@ -38,7 +38,8 @@ Is easing available, does it exist? Not from the get go, but you could potential
 
 ##### Translation
 You can use the standard iOS (platform specific) animation functionalities to perform functions like translation
-```let translation = gesture.getTranslationInView(self.view)
+```
+let translation = gesture.getTranslationInView(self.view)
 let progress = translation.y / self.view.bounds.size.height;
 animationView.animationProgress = progress
 ```
@@ -47,14 +48,16 @@ animationView.animationProgress = progress
 Interpolation, Running person ->Trips if fails -> Crosses finish line if failed
 
 Definitely a possibility
-```animationView.play(fromProgress: 0, toProgress: 0.25, withCompletion: nil)
+```
+animationView.play(fromProgress: 0, toProgress: 0.25, withCompletion: nil)
 animationView.play(fromProgress: 0.5, toProgress: 1, withCompletion: nil)
 ```
 
 
 Forward and Backward animations-
 
-```animationView.play(fromProgress: 0.25, toProgress: 0.5, withCompletion: nil)
+```
+animationView.play(fromProgress: 0.25, toProgress: 0.5, withCompletion: nil)
 animationView.play(fromProgress: 0.5, toProgress: 0.25, withCompletion: nil)
 ```
 
