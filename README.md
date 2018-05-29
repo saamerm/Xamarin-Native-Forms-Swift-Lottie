@@ -14,28 +14,54 @@ Implementation and Description
 ### 3. Show implementation of Lottie when stored on device & web -G
 
 ### 4. JSON Description -S
+The JSON contains different values for after effects features 
+https://github.com/airbnb/lottie-ios#supported-after-effects-features
 
-### 5. Connection between the interaction layer and the state layer -S
-What properties does the animation return
 
-### 6. Pipeline Video -G
-Here's a video put together that shows from beginning to end of creating a Lottie Animation
+You also have the ability to change colors be manipulating the JSON file 
+https://github.com/airbnb/lottie-ios#now-lets-change-their-colors
 
-Link - 
+### 5. Pipeline Video -G
+There's a video put together that shows from beginning to end of creating a Lottie Animation in this repository (.mov) file
 
-### 7. Xamarin Native, Swift, Xamarin Forms, React Native -G and -S
+### 6. Xamarin Native, Swift, Xamarin Forms, React Native -G and -S
 Demo Controls w/Examples and ways to build project
 
 Radio Button - G
 
-### 8. Going fancy-Easing & other features -S
-Is easing available, does it exist? 
+Swift Example from scratch
 
-Interpolation, Running person->Trips if fails -> Crosses finish line if failed
+### 7. Going fancy-Easing & other features -S
 
-Forward and Backward animations
+##### Easing
+Is easing available, does it exist? Not from the get go, but you could potentially edit the animation object properties to edit speed
 
-### 9. Alternatives, Pros & Cons -G and -S
+##### Translation
+You can use the standard iOS (platform specific) animation functionalities to perform functions like translation
+```
+let translation = gesture.getTranslationInView(self.view)
+let progress = translation.y / self.view.bounds.size.height;
+animationView.animationProgress = progress
+```
+
+##### Interpolation and Reversability
+Interpolation, Running person ->Trips if fails -> Crosses finish line if failed
+
+Definitely a possibility
+```
+animationView.play(fromProgress: 0, toProgress: 0.25, withCompletion: nil)
+animationView.play(fromProgress: 0.5, toProgress: 1, withCompletion: nil)
+```
+
+
+Forward and Backward animations-
+
+```
+animationView.play(fromProgress: 0.25, toProgress: 0.5, withCompletion: nil)
+animationView.play(fromProgress: 0.5, toProgress: 0.25, withCompletion: nil)
+```
+
+### 8. Alternatives, Pros & Cons -G and -S
 
 ##### Pros
 * Allows A/B testing by supporting  loading JSON files over the network
@@ -54,4 +80,8 @@ Facebook’s Keyframes- Only supports a small set of After Effects features to s
 
 Framer- 
 
-### 10. LottieFiles.com -S
+### 9. LottieFiles.com -S
+
+CoFounder is on Forbes 30 over 30.
+
+An online community to find, test, edit, and share Lottie animations.
