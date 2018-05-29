@@ -140,6 +140,10 @@
     <Compile Include="ItemNewViewController.designer.cs">
       <DependentUpon>ItemNewViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="LottieComponentViewController.cs" />
+    <Compile Include="LottieComponentViewController.designer.cs">
+      <DependentUpon>LottieComponentViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Entitlements.plist" />
@@ -153,6 +157,9 @@
   <ItemGroup>
     <BundleResource Include="check.json" />
     <BundleResource Include="shy_wolf.json" />
+    <BundleResource Include="Resources\Switch.json" />
+    <BundleResource Include="Resources\Switch_States.json" />
+    <BundleResource Include="Resources\TwitterHeart.json" />
   </ItemGroup>
   <Import Project="..\LottieTest\LottieTest.projitems" Label="Shared" Condition="Exists('..\LottieTest\LottieTest.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

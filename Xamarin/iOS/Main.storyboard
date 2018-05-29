@@ -23,6 +23,7 @@
                         <segue destination="Toh-Aj-cMa" kind="relationship" relationship="viewControllers" id="XbG-zj-C9d"/>
                         <segue destination="QGS-Mh-Cgo" kind="relationship" relationship="viewControllers" id="TDB-QL-mN0"/>
                         <segue destination="YvR-cN-mv5" kind="relationship" relationship="viewControllers" id="CsV-co-HrZ"/>
+                        <segue destination="acZ-e6-s5D" kind="relationship" relationship="viewControllers" id="eya-dZ-ziM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -103,7 +104,7 @@
                             <constraint firstItem="Uax-o6-y1f" firstAttribute="leading" secondItem="wl9-1w-qqH" secondAttribute="leading" constant="16" id="wK0-LQ-sZn"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="From Assets" id="Ect-BC-k4s"/>
+                    <tabBarItem key="tabBarItem" title="From Assets" image="Second" id="Ect-BC-k4s"/>
                     <connections>
                         <outlet property="RadioButton" destination="gEF-bH-h3p" id="diR-Ba-lU7"/>
                         <outlet property="RadioContainer" destination="Uax-o6-y1f" id="xJd-MX-v3Z"/>
@@ -183,7 +184,7 @@
                             <constraint firstAttribute="trailing" secondItem="8iC-K0-Rjc" secondAttribute="trailing" id="ybd-Yb-TUF"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="From Web" id="wEc-dV-Idd"/>
+                    <tabBarItem key="tabBarItem" title="From Web" image="Second" id="wEc-dV-Idd"/>
                     <connections>
                         <outlet property="ContentView" destination="8iC-K0-Rjc" id="bwj-mt-n9z"/>
                         <outlet property="Test1Button" destination="sXS-p1-Nh2" id="SAY-e6-cKO"/>
@@ -194,6 +195,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dpp-df-7iY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="769" y="0.0"/>
+        </scene>
+        <!--Components-->
+        <scene sceneID="joa-FZ-se5">
+            <objects>
+                <viewController storyboardIdentifier="LottieComponentViewController" title="Components" id="acZ-e6-s5D" customClass="LottieComponentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qfn-Cb-5oO"/>
+                        <viewControllerLayoutGuide type="bottom" id="ru7-88-pm7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3gf-pm-lLC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOTAnimationSwitch - built-in control" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1V-jQ-hEz">
+                                <rect key="frame" x="44" y="28" width="287" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="c1V-jQ-hEz" secondAttribute="trailing" constant="44" id="k5h-Sm-dgP"/>
+                            <constraint firstItem="c1V-jQ-hEz" firstAttribute="top" secondItem="qfn-Cb-5oO" secondAttribute="bottom" constant="8" id="lkI-2e-Tbq"/>
+                            <constraint firstItem="c1V-jQ-hEz" firstAttribute="leading" secondItem="3gf-pm-lLC" secondAttribute="leading" constant="44" id="ngf-qH-3ni"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Components" image="Second" id="3RC-UG-aBX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7aK-zn-qfw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="751"/>
         </scene>
         <!--Controls-->
         <scene sceneID="f2M-oM-8Ep">
@@ -250,7 +283,7 @@
                             <constraint firstItem="TVx-H6-4hT" firstAttribute="leading" secondItem="5nY-8P-CLY" secondAttribute="leading" constant="16" id="o2O-ff-VXs"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Controls" id="DmJ-FW-KMc"/>
+                    <tabBarItem key="tabBarItem" title="Controls" image="Second" id="DmJ-FW-KMc"/>
                     <connections>
                         <outlet property="HideButton" destination="TVx-H6-4hT" id="adP-Sy-v7c"/>
                         <outlet property="ShowButton" destination="Km6-IM-e0C" id="SVL-WL-LCD"/>
@@ -328,4 +361,7 @@
             <point key="canvasLocation" x="2906" y="-1534"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Second" width="32" height="30"/>
+    </resources>
 </document>
