@@ -1,4 +1,4 @@
-Denver-IUDG-Lottie
+Denver-IUDG Meetup-Lottie Animations
 ============
 GitHub repository for the iOS User Developer Group Meetup on May 29th 2018 at Slalom 1899 Wynkoop St Suite 800, Denver, CO 80202. Greg Fein and Saamer Mansoor will be presenting Lottie as a tool to create beautiful vector animations
 
