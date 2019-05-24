@@ -20,7 +20,7 @@ Here is some sample from the official site
 ## Install Lottie
 
 ###Cocoapods
-Add the pod to your podfile
+Add the pod to your podfile 
 ```
 pod 'lottie-ios'
 ```
@@ -28,6 +28,7 @@ run
 ```
 pod install
 ```
+(If you've never added pods before, install cocoapods in the terminal using "sudo gem install cocoapods" and then go to your project directory and call "pod init"
 
 ###Carthage
 Install Carthage (https://github.com/Carthage/Carthage)
